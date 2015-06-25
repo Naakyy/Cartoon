@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#96CDCD" >
+    
+    <!-- 上边主页面 -->
+    <fragment  
+        android:id="@+id/fg_main"
+        android:name="com.cyy.naak.fragment.FragmentMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"/>
+    <fragment 
+        android:id="@+id/fg_search"
+        android:name="com.cyy.naak.fragment.FragmentSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"/>
+    <fragment 
+        android:id="@+id/fg_setting"
+        android:name="com.cyy.naak.fragment.FragmentSetting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"/>
+
+
+
+    <!-- 底部菜单 -->
+	<RadioGroup 
+	    android:id="@+id/bottom_rg"
+	    android:layout_width="fill_parent"
+	    android:layout_height="70dp"
+	    android:background="#383838"
+	    android:orientation="horizontal">
+	    
+	    <RadioButton 
+	        android:id="@+id/one_rb"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+	        android:checked="true"
+	        android:button="@null"
+	        android:layout_weight="1"
+	        android:text="首页"
+	        android:gravity="center_horizontal"
+            android:drawableTop="@mipmap/ic_launcher"
+	        android:textColor="#fff"
+	        android:textStyle="bold"/>
+	     <RadioButton 
+	        android:id="@+id/two_rb"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+	        android:checked="true"
+	        android:button="@null"
+	        android:layout_weight="1"
+	        android:gravity="center_horizontal"
+	        android:drawableTop="@mipmap/ic_launcher"
+	        android:text="搜索"
+	        android:textColor="#fff"
+	        android:textStyle="bold"/>
+	      <RadioButton 
+	        android:id="@+id/three_rb"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+	        android:checked="true"
+	        android:button="@null"
+	        android:layout_weight="1"
+	        android:drawableTop="@mipmap/ic_launcher"
+	        android:text="设置"
+	        android:gravity="center_horizontal"
+	        android:textColor="#fff"
+	        android:textStyle="bold"/>
+	    
+	</RadioGroup>
+	
+</LinearLayout>
