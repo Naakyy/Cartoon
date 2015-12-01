@@ -1,0 +1,2 @@
+# Cartoon
+该项目有用到Android的开源框架，universal-image-loader图片加载、Volley网络通信、vitamio万能播放器和PagerSlidingTabStrip交互式页面指示控件来配合配合ViewPager控件使用等。
