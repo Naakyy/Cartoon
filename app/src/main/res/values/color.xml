@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="toolbar_text">#e6006a</color>
+
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent">#FD87A9</color>
+    <color name="win_bg">#E5E5E5</color>
+    <color name="line">#D7D7D7</color>
+    <color name="grayish">#E5E5E5</color>
+    <color name="white">#fff</color>
+
+    <color name="grayish_lessen">#E3E3E3</color>
+
+    <color name="replace_text_color">#9b9b9b</color>
+    <color name="dialog_transparent">#00000000</color>
+    <color name="red">#e91374</color>
+    <color name="black">#000</color>
+    <color name="bule">#6495ED</color>
+
+    <color name="tomato">#FF6666</color>
+    <color name="orange">#F67549</color>
+    <color name="hotpink">#E454D7</color>
+    <color name="deeppink">#e91374</color>
+    <color name="pink">#FFC1C1</color>
+    <color name="yellow">#FFCC00</color>
+
+    <color name="grey_cancel">#929292</color>
+
+</resources>

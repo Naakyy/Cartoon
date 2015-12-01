@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <include
+        android:id="@+id/layout_bar"
+        layout="@layout/title_collect_bar"/>
+
+
+    <ListView
+        android:id="@+id/lv_collect"
+        android:layout_below="@id/layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"/>
+
+    <Button
+        android:id="@+id/bt_delete_all"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="删除所选"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:background="#60000000"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

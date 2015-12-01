@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/white"
+    android:layout_margin="2dp"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/iv_collect_pic"
+        android:layout_width="80dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="2dp"/>
+    <LinearLayout
+        android:id="@+id/layout_collect_item"
+        android:layout_toRightOf="@id/iv_collect_pic"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="21dp"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_collect_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="海贼王"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_collect_eps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="580集"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/checkbox_collect_item"
+        android:layout_toRightOf="@id/layout_collect_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:button="@drawable/checked"/>
+
+</RelativeLayout>

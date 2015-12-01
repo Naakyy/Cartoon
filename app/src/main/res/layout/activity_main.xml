@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#96CDCD" >
+    android:background="@color/grayish" >
     
     <!-- 上边主页面 -->
     <fragment  
@@ -13,26 +13,25 @@
         android:layout_height="match_parent"
         android:layout_weight="1.0"/>
     <fragment 
-        android:id="@+id/fg_search"
-        android:name="com.cyy.naak.fragment.FragmentSearch"
+        android:id="@+id/fg_collect"
+        android:name="com.cyy.naak.fragment.FragmentCollect"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.0"/>
     <fragment 
-        android:id="@+id/fg_setting"
-        android:name="com.cyy.naak.fragment.FragmentSetting"
+        android:id="@+id/fg_historical"
+        android:name="com.cyy.naak.fragment.FragmentHistorical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.0"/>
-
-
 
     <!-- 底部菜单 -->
 	<RadioGroup 
 	    android:id="@+id/bottom_rg"
 	    android:layout_width="fill_parent"
-	    android:layout_height="70dp"
-	    android:background="#383838"
+	    android:layout_height="66dp"
+		android:paddingTop="5dp"
+	    android:background="@color/colorPrimaryDark"
 	    android:orientation="horizontal">
 	    
 	    <RadioButton 
@@ -44,30 +43,28 @@
 	        android:layout_weight="1"
 	        android:text="首页"
 	        android:gravity="center_horizontal"
-            android:drawableTop="@mipmap/ic_launcher"
+            android:drawableTop="@mipmap/home"
 	        android:textColor="#fff"
 	        android:textStyle="bold"/>
 	     <RadioButton 
 	        android:id="@+id/two_rb"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-	        android:checked="true"
 	        android:button="@null"
 	        android:layout_weight="1"
 	        android:gravity="center_horizontal"
-	        android:drawableTop="@mipmap/ic_launcher"
-	        android:text="搜索"
+	        android:drawableTop="@mipmap/favor"
+	        android:text="收藏"
 	        android:textColor="#fff"
 	        android:textStyle="bold"/>
 	      <RadioButton 
 	        android:id="@+id/three_rb"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-	        android:checked="true"
 	        android:button="@null"
 	        android:layout_weight="1"
-	        android:drawableTop="@mipmap/ic_launcher"
-	        android:text="设置"
+	        android:drawableTop="@mipmap/history"
+	        android:text="历史纪录"
 	        android:gravity="center_horizontal"
 	        android:textColor="#fff"
 	        android:textStyle="bold"/>

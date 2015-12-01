@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/dialog_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+           android:id="@+id/dialog_historical_title"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingTop="18dp"
+           android:layout_marginBottom="18dp"
+           android:text="温馨提示"
+           android:textColor="@color/colorPrimaryDark"
+           android:textSize="17sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/line"/>
+
+        <TextView
+            android:id="@+id/dialog_historical_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:text="你确定要清空历史纪录吗?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"/>
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@mipmap/line1"
+          android:layout_marginBottom="15dp"/>
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="60dp"
+          android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/dialog_historical_cancel"
+            style="@style/CancelButtonStyle"
+            android:text="取消"
+            android:textAllCaps="false"/>
+        <Button
+            android:layout_toRightOf="@id/dialog_historical_cancel"
+            android:id="@+id/dialog_historical_complete"
+            android:layout_marginLeft="26dp"
+            style="@style/CompleteButtonStyle"
+            android:text="确定"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimaryDark"/>
+      </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

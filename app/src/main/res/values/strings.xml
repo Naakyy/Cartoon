@@ -1,6 +1,11 @@
 <resources>
-    <string name="app_name">FragmentDemo</string>
+    <string name="app_name">naak</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="title_activity_part_of">PartOfActivity</string>
+    <string name="title_activity_vedio">VedioActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
 </resources>

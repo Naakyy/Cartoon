@@ -1,8 +1,58 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- toolbar(actionbar)颜色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- 状态栏的颜色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- EditText编辑时、RadioButton选中、Checkbox等选中时的颜色 -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- toolbar上文字的颜色 -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+
+    <!--checkbox 收藏的点击效果-->
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:paddingLeft">25.0dip</item>
+        <item name="android:maxHeight">7.0dip</item>
+        <item name="android:layout_height">22dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">12dip</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CancelButtonStyle">
+        <item name="android:textColor">@color/grey_cancel</item>
+        <item name="android:layout_width">95dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/report_btn_selector</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="CompleteButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">95dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/report_btn_selector</item>
+        <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
 </resources>
